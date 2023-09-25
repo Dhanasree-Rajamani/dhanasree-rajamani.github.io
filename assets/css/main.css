@@ -3336,6 +3336,8 @@ input, select, textarea {
 		background-color: #4acaa8;
 		text-align: center;
 		border-radius: 10px;
+		align-items: center; /* Vertically center the content */
+		justify-content: center; /* Horizontally center the content */
 	}
 
 	/* Style the link text */
@@ -3386,3 +3388,32 @@ input, select, textarea {
 	.download-button a:hover {
 		background-color: #3a9d91;
 	}
+
+	/* Apply some basic styles to the list */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent skills from wrapping to the next line */
+}
+
+/* Style for each skill item */
+.skill {
+    background-color: darkseagreen; /* Initial background color */
+    color: #fff; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px 10px; /* Spacing inside the box */
+    margin-right: 5px; /* Margin between skills */
+    transition: background-color 0.3s; /* Smooth color transition */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Change background color on hover */
+.skill:hover {
+    background-color: #e74c3c; /* New background color on hover */
+}
+
+.project-description {
+	margin: 0 0 0.25em 0;
+}
