@@ -3319,10 +3319,15 @@ input, select, textarea {
 	.info-container {
 		display: flex;
 		justify-content: space-between;
+		text-align: justify;
 	}
 
 	.job-title, .work-year {
 		font-style: italic;
+	}
+
+	.job-title, .project-name {
+		margin-right: 1em;
 	}
 
 	.github {
@@ -3395,7 +3400,7 @@ input, select, textarea {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap; /* Prevent skills from wrapping to the next line */
+    flex-wrap: wrap; /* Prevent skills from wrapping to the next line */
 }
 
 /* Style for each skill item */
@@ -3406,8 +3411,18 @@ input, select, textarea {
     padding: 1px 10px; /* Spacing inside the box */
     margin-right: 5px; /* Margin between skills */
     transition: background-color 0.3s; /* Smooth color transition */
-    cursor: pointer; /* Change cursor on hover */
+	margin-bottom: 1em;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+	.skill {
+	  font-size: 16px; /* Adjust font size for mobile devices */
+	  margin-right: 0.5em; /* Remove horizontal spacing on smaller screens */
+	  width: 30%; /* Make items occupy the full width of the container */
+	  text-align: center; /* Center-align items */
+	}
+  }
 
 /* Change background color on hover */
 .skill:hover {
@@ -3416,4 +3431,8 @@ input, select, textarea {
 
 .project-description {
 	margin: 0 0 0.25em 0;
+}
+
+.download-button {
+	margin-bottom: 1em;
 }
